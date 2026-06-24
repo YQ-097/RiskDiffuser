@@ -1,0 +1,85 @@
+_target_: nuplan.planning.scenario_builder.scenario_filter.ScenarioFilter
+_convert_: "all"
+
+scenario_types: # List of scenario types to include
+  - starting_left_turn
+  - starting_right_turn
+  - starting_straight_traffic_light_intersection_traversal
+  - stopping_with_lead
+  - high_lateral_acceleration
+  - high_magnitude_speed
+  - low_magnitude_speed
+  - traversing_pickup_dropoff
+  - waiting_for_pedestrian_to_cross
+  - behind_long_vehicle
+  - stationary_in_traffic
+  - near_multiple_vehicles
+  - changing_lane
+  - following_lane_with_lead
+
+scenario_tokens:
+  - "a134475021705f11"
+  - "dbbd1fdecb775d9d"
+  - "50de55c64b3a5cec"
+  - "e8fd7512fe6b5486"
+  - "20dd31cd90325acc"
+  - "b0ab4efe7be45584"
+  - "04659d4c41935483"
+  - "8a5fb3de4e785f87"
+  - "618aad445b8d56ed"
+  - "c158bae7ba995615"
+  - "75900dd01f025b22"
+  - "b70085dba0765845"
+  - "d2d0152ca8b45448"
+  - "7426524f502552e0"
+  - "cc1692bc3a625b0d"
+  - "680e1ce48b255213"
+  - "4930fdc43c1857ae"
+  - "617eb54159435481"
+  - "0cd0bb95c83751e2"
+  - "40042cb53ea15317"
+  - "d77157608aad5340"
+  - "9c3885a3f47a5393"
+  - "e34c9ed042405fe4"
+  - "2847f10808615238"
+  - "bf6ed5c0c14c5095"
+  - "cdb5400e78d35889"
+  - "89a6f0ca56e15d44"
+  - "236f917924b6546a"
+  - "d600cd9504af5c8f"
+  - "b4199a4f019e5984"
+  - "e3e2933994835eba"
+  - "457238fe173052e9"
+  - "8454b2b637175956"
+  - "ea34b66a5b9052e3"
+  - "df3209418f485407"
+  - "1a66a7c3545d5323"
+  - "834d5f5b024d5b4f"
+  - "f3aa2dce8d605800"
+  - "fc4760dc057c5aca"
+  - "383b3d0dc4b955bf"
+  - "c31f7d6bb4735d2b"
+  - "8bd63e2b025d5e38"
+  - "370e453a4f6e55cf"
+  - "a47a238ed8be578b"
+  - "6e6ad7c8e2d95123"
+  - "ed6c378bd7c15cf1"
+  - "2ccf908e66225542"
+  - "45f20433b45a554c"
+  - "077f90163e83515a"
+  - "bb316a29dda4579e"
+
+log_names: ${splitter.log_splits.val}
+map_names: null
+
+num_scenarios_per_type: 100
+limit_total_scenarios: null
+timestamp_threshold_s: 15
+ego_displacement_minimum_m: null # Whether to remove scenarios where the ego moves less than a certain amount
+ego_start_speed_threshold: null # Limit to scenarios where the ego reaches a certain speed from below
+ego_stop_speed_threshold: null # Limit to scenarios where the ego reaches a certain speed from above
+speed_noise_tolerance: null # Value at or below which a speed change between two timepoints should be ignored as noise.
+
+expand_scenarios: false
+remove_invalid_goals: true
+shuffle: false

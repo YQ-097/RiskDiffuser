@@ -1,0 +1,85 @@
+_target_: nuplan.planning.scenario_builder.scenario_filter.ScenarioFilter
+_convert_: all
+scenario_types:
+  - behind_long_vehicle
+  - changing_lane
+  - following_lane_with_lead
+  - high_lateral_acceleration
+  - high_magnitude_speed
+  - low_magnitude_speed
+  - near_multiple_vehicles
+  - starting_left_turn
+  - starting_right_turn
+  - starting_straight_traffic_light_intersection_traversal
+  - stationary_in_traffic
+  - stopping_with_lead
+  - traversing_pickup_dropoff
+  - waiting_for_pedestrian_to_cross
+scenario_tokens:
+  - a36c1b943871552a
+  - "88aa2ad613205556"
+  - "6db7f9f43c655149"
+
+  - "5d392fa38ff65c3f"
+  - "59199b4d340558b4"
+  - d8a23f0cb78e5938
+
+  - "0d3490827eb45df7"
+  - "5a79cd2161c754c9"
+  - cf87d58064425ee7
+
+  - "6d0875dbcec45b3a"
+  - "75d56d4c7b6f5013"
+  - "9a92b5bf8d735034"
+
+  - "88ac8fc4c8b25a22"
+  - "070345fd69165e11"
+  - "90a02e90433d5137"
+
+  - "15d232cebce05616"
+  - be2029b5dc2c5b78
+  - fd1a947d104956f8
+
+  - "91c272aacfc6511b"
+  - "904819e474565d84"
+  - "7f7cd65cacff5f22"
+
+  - "8e355342a0115145"
+  - cbdc3e2a73e15687
+  - eb2ac6cc24f55f6e
+
+  - c2c649fcd5325b3d
+  - "6f2ce5e5530b5e3c"
+  - "688caa7560c05d03"
+
+  - "46236093f497573f"
+  - e9faae87fb83540d
+  - "2fad34f49b825d6b"
+
+  - "2703f12098405703"
+  - "26c1cae14e5b5ce8"
+  - a112ea9f3d2b5d5b
+
+  - "97237e8269415fb0"
+  - "80ababf8dcfb5914"
+  - "752323a35a825d22"
+
+  - "13f3028945475a79"
+  - ae6e6bd7567d56bc
+  - d91351e4615859fb
+
+  - "1e502e7fc8745e0a"
+  - "9914f87b536b5c23"
+  - c2b222d1f0715c00
+log_names: null
+map_names: null
+num_scenarios_per_type: null
+limit_total_scenarios: null
+timestamp_threshold_s: 15
+ego_displacement_minimum_m: null
+ego_start_speed_threshold: null
+ego_stop_speed_threshold: null
+speed_noise_tolerance: null
+expand_scenarios: null
+remove_invalid_goals: true
+shuffle: false
