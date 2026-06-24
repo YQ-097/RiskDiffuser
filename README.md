@@ -6,6 +6,10 @@ Official implementation for:
 
 RiskDiffuser is a diffusion-based planner for autonomous driving with continuous risk conditioning. The planner receives a continuous risk level and learns to generate future ego trajectories whose behavior can be adjusted by risk. This repository also includes a RiskNet module that predicts scene-level risk from the same encoded scene representation and can be used to provide risk conditioning automatically.
 
+<p align="center">
+  <img src="assets/framework.png" width="100%">
+</p>
+
 ## Overview
 
 The codebase contains:
@@ -152,6 +156,6 @@ If this work is useful for your research, please cite:
 }
 ```
 
-## License
+## Acknowledgement
 
-Please add the license terms for this repository before public release.
+This project benefits from several excellent open-source codebases, including [PlanTF](https://github.com/jchengai/planTF), [PLUTO](https://github.com/jchengai/pluto), [Diffusion Planner](https://github.com/ZhengYinan-AIR/Diffusion-Planner), and [nuPlan](https://github.com/motional/nuplan-devkit). We sincerely appreciate the authors and contributors for making their implementations and resources publicly available.
